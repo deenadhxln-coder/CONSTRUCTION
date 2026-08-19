@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "projectName": "Green Valley Villa",
+    "client": "Arun Kumar",
+    "projectType": "Residential",
+    "location": "Madurai",
+    "budget": 4500000,
+    "startDate": "2026-06-01",
+    "endDate": "2026-12-20",
+    "status": "Active",
+    "progress": 72,
+    "description": "Modern residential villa construction project."
+  },
+  {
+    "id": 2,
+    "projectName": "Tech Park Office",
+    "client": "Tech Solutions Ltd.",
+    "projectType": "Commercial",
+    "location": "Chennai",
+    "budget": 8500000,
+    "startDate": "2026-05-15",
+    "endDate": "2027-01-30",
+    "status": "Active",
+    "progress": 54,
+    "description": "Commercial office building construction."
+  },
+  {
+    "id": 3,
+    "projectName": "Industrial Warehouse",
+    "client": "BuildCorp Industries",
+    "projectType": "Industrial",
+    "location": "Coimbatore",
+    "budget": 12000000,
+    "startDate": "2026-08-01",
+    "endDate": "2027-05-15",
+    "status": "Planning",
+    "progress": 25,
+    "description": "Large-scale industrial warehouse development."
+  },
+  {
+    "id": 4,
+    "projectName": "City Apartment",
+    "client": "Priya Sharma",
+    "projectType": "Residential",
+    "location": "Bangalore",
+    "budget": 6500000,
+    "startDate": "2026-04-10",
+    "endDate": "2026-10-25",
+    "status": "Active",
+    "progress": 86,
+    "description": "Multi-floor residential apartment construction."
+  },
+  {
+    "id": 5,
+    "projectName": "Community Shopping Center",
+    "client": "Urban Retail Group",
+    "projectType": "Commercial",
+    "location": "Madurai",
+    "budget": 15000000,
+    "startDate": "2026-09-01",
+    "endDate": "2027-08-30",
+    "status": "Planning",
+    "progress": 10,
+    "description": "Community shopping and retail center."
+  }
+]

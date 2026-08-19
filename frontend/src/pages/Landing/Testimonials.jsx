@@ -1,57 +1,71 @@
-const testimonials = [
-  {
-    name: "Arun Kumar",
-    role: "Property Developer",
-    message:
-      "The team handled our project professionally from planning through completion. Communication and execution were excellent.",
-  },
-  {
-    name: "Priya Sharma",
-    role: "Business Owner",
-    message:
-      "We appreciated the transparency throughout the construction process. The project was well managed and delivered with great quality.",
-  },
-  {
-    name: "Rahul Mehta",
-    role: "Real Estate Investor",
-    message:
-      "Their project management made the entire construction process much easier for us. Highly professional team.",
-  },
-];
-
 const Testimonials = () => {
-  return (
-    <section className="bg-white py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+  const testimonials = [
+    {
+      name: "Rajesh Kumar",
+      role: "Residential Client",
+      message:
+        "The team handled our home construction professionally from planning to completion. Communication and workmanship were excellent.",
+    },
+    {
+      name: "Priya Sharma",
+      role: "Business Owner",
+      message:
+        "Our office project was completed on schedule with excellent attention to quality and detail. Highly professional team.",
+    },
+    {
+      name: "Arun Prakash",
+      role: "Property Developer",
+      message:
+        "Their project management and construction quality made the entire process smooth and reliable.",
+    },
+  ];
 
+  return (
+    <section className="bg-slate-100 px-6 py-24">
+      <div className="mx-auto max-w-7xl">
+
+        {/* Header */}
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-bold uppercase tracking-widest text-orange-500">
-            Testimonials
+          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-orange-500">
+            Client Reviews
           </p>
 
-          <h2 className="mt-3 text-4xl font-bold text-slate-900 sm:text-5xl">
-            What our clients say
+          <h2 className="text-4xl font-bold text-slate-900 sm:text-5xl">
+            What Our Clients
+            <span className="block text-orange-500">
+              Say About Us
+            </span>
           </h2>
+
+          <p className="mt-5 text-lg leading-8 text-slate-600">
+            We believe successful construction projects are built on trust,
+            communication, and quality.
+          </p>
         </div>
 
+        {/* Testimonials */}
         <div className="mt-14 grid gap-6 lg:grid-cols-3">
+
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.name}
-              className="rounded-2xl border border-slate-200 p-8"
+              className="rounded-2xl bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
-              <div className="text-2xl text-orange-500">
-                ★★★★★
+              {/* Stars */}
+              <div className="flex gap-1 text-orange-500">
+                ★ ★ ★ ★ ★
               </div>
 
+              {/* Message */}
               <p className="mt-6 leading-7 text-slate-600">
                 "{testimonial.message}"
               </p>
 
+              {/* Client */}
               <div className="mt-8 border-t border-slate-200 pt-5">
-                <p className="font-bold text-slate-900">
+                <h3 className="font-bold text-slate-900">
                   {testimonial.name}
-                </p>
+                </h3>
 
                 <p className="mt-1 text-sm text-slate-500">
                   {testimonial.role}
@@ -59,7 +73,9 @@ const Testimonials = () => {
               </div>
             </div>
           ))}
+
         </div>
+
       </div>
     </section>
   );

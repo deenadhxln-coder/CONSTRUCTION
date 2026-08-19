@@ -1,77 +1,91 @@
-const services = [
-  {
-    number: "01",
-    title: "Residential Construction",
-    description:
-      "From individual homes to large residential communities, we deliver quality construction with careful attention to every detail.",
-  },
-  {
-    number: "02",
-    title: "Commercial Construction",
-    description:
-      "Modern commercial spaces designed and constructed with efficient planning, quality materials, and professional execution.",
-  },
-  {
-    number: "03",
-    title: "Project Management",
-    description:
-      "Complete project coordination covering planning, scheduling, resources, budgets, contractors, and site operations.",
-  },
-  {
-    number: "04",
-    title: "Renovation & Remodeling",
-    description:
-      "Transform existing spaces with professional renovation, remodeling, structural improvements, and modern design.",
-  },
-];
-
 const Services = () => {
-  return (
-    <section id="services" className="bg-white py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+  const services = [
+    {
+      number: "01",
+      title: "Residential Construction",
+      description:
+        "We build modern, comfortable, and durable homes designed around your lifestyle and requirements.",
+    },
+    {
+      number: "02",
+      title: "Commercial Construction",
+      description:
+        "Professional construction solutions for offices, retail spaces, and other commercial properties.",
+    },
+    {
+      number: "03",
+      title: "Industrial Construction",
+      description:
+        "Reliable construction services for industrial facilities with a strong focus on safety and efficiency.",
+    },
+    {
+      number: "04",
+      title: "Renovation & Remodeling",
+      description:
+        "Transform existing spaces with high-quality renovation and remodeling solutions tailored to your needs.",
+    },
+  ];
 
-        {/* Heading */}
-        <div className="max-w-3xl">
-          <p className="text-sm font-bold uppercase tracking-widest text-orange-500">
-            Our Services
+  return (
+    <section
+      id="services"
+      className="bg-white px-6 py-24"
+    >
+      <div className="mx-auto max-w-7xl">
+
+        {/* Section Header */}
+        <div className="max-w-2xl">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-orange-500">
+            What We Do
           </p>
 
-          <h2 className="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-            Complete construction solutions
+          <h2 className="text-4xl font-bold leading-tight text-slate-900 sm:text-5xl">
+            Construction Services
+            <span className="block text-orange-500">
+              Built Around You
+            </span>
           </h2>
 
           <p className="mt-5 text-lg leading-8 text-slate-600">
-            We combine experienced teams, modern technology, and reliable
-            project management to deliver construction projects successfully.
+            From new construction to complete renovations, we provide
+            professional solutions that turn your ideas into quality spaces.
           </p>
         </div>
 
-        {/* Services */}
-        <div className="mt-16 grid gap-6 md:grid-cols-2">
+        {/* Service Cards */}
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
           {services.map((service) => (
             <div
               key={service.number}
-              className="group rounded-2xl border border-slate-200 bg-slate-50 p-8 transition duration-300 hover:-translate-y-1 hover:border-orange-200 hover:bg-white hover:shadow-xl"
+              className="group rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-orange-200 hover:shadow-xl"
             >
-              <div className="flex items-start justify-between">
+              {/* Number */}
+              <div className="flex items-center justify-between">
                 <span className="text-sm font-bold text-orange-500">
                   {service.number}
                 </span>
 
-                <span className="text-2xl text-slate-300 transition group-hover:text-orange-500">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-orange-50 text-orange-500 transition group-hover:bg-orange-500 group-hover:text-white">
                   →
-                </span>
+                </div>
               </div>
 
-              <h3 className="mt-10 text-2xl font-bold text-slate-900">
+              {/* Title */}
+              <h3 className="mt-8 text-xl font-bold text-slate-900">
                 {service.title}
               </h3>
 
-              <p className="mt-4 leading-7 text-slate-600">
+              {/* Description */}
+              <p className="mt-4 text-sm leading-7 text-slate-600">
                 {service.description}
               </p>
+
+              {/* Bottom line */}
+              <div className="mt-7 h-1 w-10 rounded-full bg-orange-500 transition-all duration-300 group-hover:w-full" />
             </div>
           ))}
+
         </div>
       </div>
     </section>

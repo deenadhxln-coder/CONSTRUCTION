@@ -1,37 +1,42 @@
-const stats = [
-  {
-    value: "250+",
-    label: "Projects Completed",
-  },
-  {
-    value: "15+",
-    label: "Years Experience",
-  },
-  {
-    value: "120+",
-    label: "Team Members",
-  },
-  {
-    value: "98%",
-    label: "Client Satisfaction",
-  },
-];
-
 const Stats = () => {
-  return (
-    <section className="border-y border-slate-200 bg-white py-16">
-      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-10 px-6 sm:grid-cols-4 lg:px-8">
-        {stats.map((stat) => (
-          <div key={stat.label} className="text-center">
-            <p className="text-4xl font-bold text-slate-900 sm:text-5xl">
-              {stat.value}
-            </p>
+  const stats = [
+    {
+      value: "15+",
+      label: "Years Experience",
+    },
+    {
+      value: "250+",
+      label: "Projects Completed",
+    },
+    {
+      value: "120+",
+      label: "Professional Team",
+    },
+    {
+      value: "98%",
+      label: "Client Satisfaction",
+    },
+  ];
 
-            <p className="mt-2 text-sm text-slate-500 sm:text-base">
+  return (
+    <section className="bg-orange-500 px-6 py-20">
+      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-10 lg:grid-cols-4">
+
+        {stats.map((stat) => (
+          <div
+            key={stat.label}
+            className="text-center"
+          >
+            <h3 className="text-4xl font-black text-white sm:text-5xl">
+              {stat.value}
+            </h3>
+
+            <p className="mt-2 text-sm font-medium text-orange-100 sm:text-base">
               {stat.label}
             </p>
           </div>
         ))}
+
       </div>
     </section>
   );
