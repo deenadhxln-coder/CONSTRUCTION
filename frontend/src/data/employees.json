@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Suresh Kumar",
+    "role": "Site Engineer",
+    "department": "Engineering",
+    "email": "suresh@example.com",
+    "phone": "+91 9876543211",
+    "project": "Green Valley Villa",
+    "status": "Active"
+  },
+  {
+    "id": 2,
+    "name": "Karthik Raj",
+    "role": "Project Manager",
+    "department": "Management",
+    "email": "karthik@example.com",
+    "phone": "+91 9876543212",
+    "project": "City Mall",
+    "status": "Active"
+  },
+  {
+    "id": 3,
+    "name": "Vijay Kumar",
+    "role": "Electrician",
+    "department": "Electrical",
+    "email": "vijay@example.com",
+    "phone": "+91 9876543213",
+    "project": "Office Complex",
+    "status": "Inactive"
+  }
+]

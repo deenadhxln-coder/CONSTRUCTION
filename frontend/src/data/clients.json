@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Arun Kumar",
+    "company": "AK Developers",
+    "email": "arun@example.com",
+    "phone": "+91 9876543210",
+    "address": "Madurai, Tamil Nadu",
+    "status": "Active",
+    "projects": 3
+  },
+  {
+    "id": 2,
+    "name": "Priya Constructions",
+    "company": "Priya Constructions",
+    "email": "priya@example.com",
+    "phone": "+91 9876501234",
+    "address": "Chennai, Tamil Nadu",
+    "status": "Active",
+    "projects": 2
+  },
+  {
+    "id": 3,
+    "name": "Rajesh Enterprises",
+    "company": "Rajesh Enterprises",
+    "email": "rajesh@example.com",
+    "phone": "+91 9123456780",
+    "address": "Coimbatore, Tamil Nadu",
+    "status": "Inactive",
+    "projects": 1
+  }
+]

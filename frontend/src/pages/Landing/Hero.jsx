@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="min-h-screen bg-slate-950">
+    <section id="home" className="min-h-screen bg-slate-950">
       <div className="mx-auto flex min-h-screen max-w-7xl items-center px-6 pb-20 pt-32">
 
         {/* Left Content */}
@@ -26,13 +26,19 @@ const Hero = () => {
           {/* Buttons */}
           <div className="mt-8 flex flex-wrap gap-4">
 
-            <button className="rounded-lg bg-orange-500 px-6 py-3 font-semibold text-white transition hover:bg-orange-600">
+            <a
+              href="#contact"
+              className="inline-flex items-center justify-center rounded-lg bg-orange-500 px-6 py-3 font-semibold text-white shadow-md transition hover:bg-orange-600"
+            >
               Start a Project
-            </button>
+            </a>
 
-            <button className="rounded-lg border border-slate-600 bg-transparent px-6 py-3 font-semibold text-white transition hover:bg-slate-800">
+            <a
+              href="#projects"
+              className="inline-flex items-center justify-center rounded-lg border border-slate-600 bg-transparent px-6 py-3 font-semibold text-white transition hover:bg-slate-800"
+            >
               View Projects
-            </button>
+            </a>
 
           </div>
 

@@ -2,15 +2,15 @@ import { useState } from "react";
 
 const EditProjectForm = ({ project, onClose, onUpdate }) => {
   const [formData, setFormData] = useState({
-    projectName: project.projectName,
-    client: project.client,
-    projectType: project.projectType,
-    location: project.location,
-    budget: project.budget,
-    startDate: project.startDate,
-    endDate: project.endDate,
-    status: project.status,
-    progress: project.progress,
+    projectName: project.projectName || project.name || "",
+    client: project.client || "",
+    projectType: project.projectType || project.type || "Residential",
+    location: project.location || "",
+    budget: project.budget || "",
+    startDate: project.startDate || "",
+    endDate: project.endDate || "",
+    status: project.status || "Planning",
+    progress: project.progress ?? 0,
     description: project.description || "",
   });
 
